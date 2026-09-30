@@ -27,8 +27,7 @@ sudo apt update
 for app in "${apps[@]}"; do
 t=0
 ok=1
-while [ $t -lt 2 ] && [ $ok -ne
-0 ]; do
+while [ $t -lt 2 ] && [ $ok -ne 0 ]; do
 sudo apt install -y "$app"
 ok=$?
 t=$((t+1))
